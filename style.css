@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+:root {
+    --color1:black;
+    --color2:white;
+    --padding-left:15px;
+}
+body {
+   font-family: "Roboto Slab", serif;
+   margin:0;
+   box-sizing: border-box;
+}
+.page {
+    background-color: #dfdede;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap:.5% .5%;
+}
+.page>div::after {
+    padding: var(--padding-left);
+    display: flex;
+    content: "\2709";
+    font-size: xx-large;
+    justify-content: end;
+    align-content: flex-end;
+    
+}
+.page>div:hover {
+    transition: all 1s;
+    border-radius: 35px;
+}
+.page>div:hover::after {
+    
+    border: 2px solid royalblue;
+    content: "\2709 :Aymen@gmail.com  ";
+    font-size:18px;
+    border-radius: 30px;
+    margin:10px auto;
+    width:fit-content;
+    background-color: royalblue;
+}
+.div1 {
+    grid-area: 1/1/4/6;
+    background-color: var(--color2);
+    padding-left:var(--padding-left);
+    border-bottom: 3px solid rgb(255, 102, 0);
+    
+}
+.div2 {
+    grid-area: 1 / 6 / 4 / 10;
+    background-color: var(--color2);
+    padding-left:var(--padding-left);
+    border-bottom: 3px solid rgb(255, 102, 0);
+
+}
+.div3 {
+    color: white;
+    grid-area: 1 / 10 / 10 / 13;
+    background-color:var(--color1);
+    padding-left:var(--padding-left);
+    border-bottom: 3px solid rgb(255, 102, 0);
+
+}
+.div4 {
+    background-color: darkmagenta;
+    grid-area: 4 / 1 / 10 / 4;
+    background-color:var(--color2);
+    padding-left:var(--padding-left);
+    border-bottom: 3px solid rgb(255, 102, 0);
+
+}
+.div5 {
+    color: white;
+    background-color: coral;
+    grid-area: 4 / 4 / 7 / 10;
+    background-color:var(--color1);
+    padding-left:var(--padding-left);
+    border-bottom: 3px solid rgb(255, 102, 0);
+}
+.div6 {
+    background-color: var(--color2);
+    grid-area: 7 / 4 / 10 / 10;
+    padding-left:var(--padding-left);
+    border-bottom: 3px solid rgb(255, 102, 0);
+
+}
+.div7 {
+    grid-area: 10 / 1 / 13 / 4;
+    background-color:var(--color2);
+    padding-left:var(--padding-left);
+    border-bottom: 3px solid rgb(255, 102, 0);
+
+}
+.div8 {
+    color: white;
+    grid-area: 10 / 4 / 13 / 7;
+    padding-left:var(--padding-left);
+    background-color:var(--color1);
+    border-bottom: 3px solid rgb(255, 102, 0);
+
+}
+.div9 {
+    grid-area: 10 / 7/ 13 /10 ;
+   background-color:var(--color2);
+    border-bottom: 3px solid rgb(255, 102, 0);
+    padding-left:var(--padding-left);
+
+}
+.div10 {
+    grid-area: 10 / 10 / 13 / 13;
+    background-color:var(--color2);
+    border-bottom: 3px solid rgb(255, 102, 0);
+    padding-left:var(--padding-left);
+
+}
+h6 {
+    margin-top:-22px ;
+    font-size: medium;
+    color: cadetblue;
+}
+.parg {
+    margin-top:-30px ;
+    font-size: medium;
+}
