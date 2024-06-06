@@ -16,6 +16,7 @@ body {
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
     gap:.5% .5%;
+    
 }
 .page>div::after {
     padding: var(--padding-left);
@@ -26,9 +27,8 @@ body {
     align-content: flex-end;
     
 }
-.page>div:hover {
-    transition: all 1s;
-    border-radius: 35px;
+div {
+    border-radius:10px;
 }
 .page>div:hover::after {
     
